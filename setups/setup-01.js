@@ -1,10 +1,13 @@
+
+
+
 //Vamos criar a base, o seletro e os tamanhos da nossa cena
 
 const options = {
   targetSelector: "#scene",
   with: 800,
   height: 600,
-  backgroundColor: 0x3498eb
+  backgroundColor: 0x40464f
 };
 
 //vamos criar nosso renderizador, onde vamos usar o webgl para renderizar
@@ -34,3 +37,5 @@ const camera = new THREE.PerspectiveCamera(
 
 //posição da camera
 camera.position.z = 5;
+
+

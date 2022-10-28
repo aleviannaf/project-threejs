@@ -5,7 +5,14 @@
 //mesh é a misntura dos 2
 
 const geometry = new THREE.BoxBufferGeometry();
-const material = new THREE.MeshBasicMaterial({
+
+// vou trocar esse material por outro
+/* const material = new THREE.MeshBasicMaterial({
+    color: 0xFFFFFF
+}); */
+// vou add o MeshLambertMaterial pois posso add luz nele
+
+const material = new THREE.MeshLambertMaterial({
     color: 0xFFFFFF
 });
 
