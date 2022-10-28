@@ -40,9 +40,16 @@ const options = {
   
 //vou add a luz ambiente
 
-const light = new THREE.AmbientLight(
+/* const light = new THREE.AmbientLight(
     0x404040, 4
 );
 
+scene.add(light); */
+
+/// agora vamos trocar um uma outra luz
+// hemisphere light recebe duas cores
+const light = new THREE.HemisphereLight(
+  0xFFFFBB, 0X080820 ,2
+);
+
 scene.add(light);
-  
