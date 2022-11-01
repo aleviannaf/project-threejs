@@ -53,3 +53,15 @@ const light = new THREE.HemisphereLight(
 );
 
 scene.add(light);
+
+
+// iniciar o x3
+const x3 = new THREEx3(
+  {
+    THREE,
+    OrbitControls:  THREE.OrbitControls,
+    camera,
+    renderer,
+    scene
+  }
+)

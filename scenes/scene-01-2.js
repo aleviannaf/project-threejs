@@ -43,6 +43,14 @@ function animate() {
     requestAnimationFrame(animate);
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
-    renderer.render(scene, camera);
+
+    //configuração basica se não vai quebrar
+    x3.tick();
+
+    //mostrar na tela dados de fps
+    x3.fps(()=>{
+        renderer.render(scene, camera);
+    })
+  
   }
   animate();
