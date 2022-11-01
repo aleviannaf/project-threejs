@@ -42,7 +42,9 @@ const options = {
   );
   
   //posição da camera
-  camera.position.z = 5;
+  camera.position.x = 2.66;
+  camera.position.y = 6.68;
+  camera.position.z = 8.8;
   
 //vou add a luz ambiente
 
