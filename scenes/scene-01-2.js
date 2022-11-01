@@ -38,6 +38,9 @@ scene.add(cube);
 
 }) */
 
+//dados do cubo
+x3.add(cube, {label: 'cube'})
+
 //essa FAZ O MESMO MAS ele para quando troco de tela
 function animate() {
     requestAnimationFrame(animate);

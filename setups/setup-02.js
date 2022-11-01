@@ -11,8 +11,14 @@ const options = {
   };
   
   //vamos criar nosso renderizador, onde vamos usar o webgl para renderizar
-  const renderer = new THREE.WebGLRenderer();
+  const renderer = new THREE.WebGLRenderer(
+    //vou add ant serrilhado para deixar a imagem melhor
+    {antialias: true}
+  );
   
+  // para garantir que to usando o pixel radio do dispositivo do usuario
+  renderer.setPixelRatio(window.devicePixelRatio);
+
   //criado o renderizador, vamos dar um tamanho para ele
   renderer.setSize(options.with, options.height);
   
@@ -65,3 +71,9 @@ const x3 = new THREEx3(
     scene
   }
 )
+
+//posso vizualizar dados da camera com o x3
+x3.add(camera);
+
+//posso visualizar a lampada
+x3.add(light)
